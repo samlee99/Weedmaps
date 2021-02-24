@@ -1,4 +1,4 @@
-package com.ngmatt.weedmapsandroidcodechallenge.ui
+package com.ngmatt.weedmapsandroidcodechallenge
 
 import android.app.Activity
 import android.os.Bundle

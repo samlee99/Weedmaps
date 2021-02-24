@@ -17,7 +17,17 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField('String', 'YELP_BASE_URL', '"https://api.yelp.com/v3"')
+            buildConfigField('String', 'YELP_FUSION_API_KEY', '"Dhun2KrKQ4O8dPQ3q6-LlePSkFH_UxT7-HCg7RxjFmxxrU_TtL1H7lsML_OM82QwVr5iI3hdBY936vF_mbl4XEQgYStjriQ6b5WHP6f2rkJzh0RCgcUyRksQcdo1YHYx"')
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
         release {
+            buildConfigField('String', 'YELP_BASE_URL', '"https://api.yelp.com/v3"')
+            buildConfigField('String', 'YELP_FUSION_API_KEY', '"Dhun2KrKQ4O8dPQ3q6-LlePSkFH_UxT7-HCg7RxjFmxxrU_TtL1H7lsML_OM82QwVr5iI3hdBY936vF_mbl4XEQgYStjriQ6b5WHP6f2rkJzh0RCgcUyRksQcdo1YHYx"')
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
